@@ -54,7 +54,7 @@ For more details, refer to docs/requirements.md
 
 The data architecture for this project follows the Medallion Architecture: **Bronze, Silver** and **Gold** layers.
 
-![image.png](attachment:9bd0b471-1f5a-4747-b625-c8a66287f403:image.png)
+![Data Architecture](docs/data_architecture.png)
 
 1. **Bronze Layer:** Stores raw data as-is from the source systems. Data is ingested from CSV files into SQL Server Database.
 2. **Silver Layer:** This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
@@ -64,6 +64,7 @@ The data architecture for this project follows the Medallion Architecture: **Bro
 
 ## **Repository Structure**
 
+```bash
 data-warehouse-project/
 │
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
@@ -87,7 +88,7 @@ data-warehouse-project/
 ├── LICENSE                             # License information for the repository
 ├── .gitignore                          # Files and directories to be ignored by Git
 └── requirements.txt                    # Dependencies and requirements for the project
-
+```
 ---
 
 ## **License**
